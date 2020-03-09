@@ -1,3 +1,11 @@
- <audio   loop="loop" autoplay="autoplay">
-        <source src="http://q6vn52m3r.bkt.clouddn.com/happybirthday.mp3" type="audio/mpeg" /> 
-</audio>
+<iframe id="iframeMusic" src="http://q6vn52m3r.bkt.clouddn.com/happybirthday.mp3" 
+></iframe>
+
+<script type="text/javascript">
+	var iframe = document.getElementById("iframeMusic");
+	if(iframe){
+		iframe.onload = function(){
+			iframe.window.document.getElementsByTagName("vedio")[0].play();	
+		}
+	}
+</script>
